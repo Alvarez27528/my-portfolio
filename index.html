@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mario — Portafolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="spinner"></div>
+      <p>Cargando portafolio...</p>
+    </div>
+
+
+   <div class="intro">
+  <div class="intro-logo">M</div>
+  <div class="sparks"></div>
+</div>
+    <!-- Fondos -->
+    <div class="bg fx-gradient"></div>
+    <div class="bg fx-noise"></div>
+    <canvas id="bg3d"></canvas>
+
+    <!-- Navbar -->
+    <header class="nav">
+      <div class="brand">Mario</div>
+      <nav class="links">
+        <a href="#hero">Inicio</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre">Sobre mí</a>
+        <a href="#stats">Estadísticas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      
+    </header>
+
+    <!-- Hero -->
+  <section id="hero" class="section hero">
+  <h1>
+    <span class="headline">Soy Mario, 14 años</span>
+    <span class="cursor"></span>
+  </h1>
+  <p class="sub">
+    Aprendiendo a crear webs y apps, pero ya con experiencia en Arduino, ESP32 y proyectos maker.  
+    Ahora mismo estoy construyendo… ¡un casco de Iron Man funcional con impresión 3D!
+  </p>
+  <div class="actions">
+    <a class="btn primary" href="#proyectos">Explora mis proyectos</a>
+    <a class="btn secondary" href="#contacto">Hablemos</a>
+  </div>
+</section>
+
+
+
+      <!-- Proyectos -->
+   <section id="proyectos" class="section">
+  <h2 class="reveal">Proyectos destacados</h2>
+  <p class="reveal">
+    Aquí verás lo que me mueve: desde mis primeras webs y apps hasta proyectos de electrónica más avanzados.  
+    Arduino, ESP32, impresión 3D… y sí, el casco de Iron Man está en marcha.
+  </p>
+  <div class="filters reveal">
+    <button class="filter-btn active" data-tech="all">Todos</button>
+    <button class="filter-btn" data-tech="HTML">HTML</button>
+    <button class="filter-btn" data-tech="CSS">CSS</button>
+    <button class="filter-btn" data-tech="JavaScript">JavaScript</button>
+    <button class="filter-btn" data-tech="Arduino">Arduino</button>
+    <button class="filter-btn" data-tech="ESP32">ESP32</button>
+    <button class="filter-btn" data-tech="Unity">Unity</button>
+  </div>
+  <div id="gridProyectos" class="grid reveal"></div>
+</section>
+
+      <!-- Sobre mí -->
+  <section id="sobre" class="section">
+  <h2 class="reveal">Sobre mí</h2>
+  <p class="reveal">
+    Soy Mario, tengo 14 años y me encanta meterme en proyectos que mezclen código, electrónica y creatividad.  
+    En webs y apps estoy empezando, pero en Arduino y ESP32 ya me siento como pez en el agua.
+  </p>
+  <p class="reveal">
+    Mi proyecto más loco ahora mismo: un casco de Iron Man funcional.  
+    Programación, sensores, impresión 3D… todo junto para convertir una idea en realidad.
+  </p>
+  <p class="reveal">
+    Si quieres una web o una app, escríbeme.  
+    No tengo mucha experiencia todavía, pero tu proyecto puede ser justo lo que me ayude a crecer y alcanzar mi meta.
+  </p>
+</section>
+
+
+
+      <!-- Estadísticas -->
+<section id="stats" class="section stats">
+  <h2 class="reveal">Mis números</h2>
+  <div class="stats-grid reveal">
+    <div class="stat" data-type="proyectos">
+      <span class="number" data-target="2">0</span>
+      <p>Proyectos terminados</p>
+    </div>
+    <div class="stat" data-type="tecnologias">
+      <span class="number" data-target="9">0</span>
+      <p>Tecnologías aprendidas</p>
+    </div>
+    <div class="stat" data-type="desarrollo">
+      <span class="number" data-target="3">0</span>
+      <p>Proyectos en desarrollo</p>
+    </div>
+  </div>
+</section>
+<!-- Modal de estadísticas -->
+<div id="statsModal" class="modal">
+  <div class="modal-content">
+    <span id="closeStatsModal" class="close">&times;</span>
+    <h3 id="statsTitle"></h3>
+    <div id="statsList" class="stats-list"></div>
+  </div>
+</div>
+      <!-- Contacto -->
+   <section id="contacto" class="section">
+  <h2 class="reveal">Contacto</h2>
+  <p class="reveal">
+    ¿Quieres una web, una app o simplemente charlar sobre proyectos maker?  
+    Escríbeme. No soy un experto todavía, pero cada reto me acerca más a mi meta.  
+    Tu idea puede ser la chispa que me ayude a crecer.
+  </p>
+  <form id="contactForm" class="contact-form reveal">
+    <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+    <input type="email" id="email" name="email" placeholder="Tu correo" required />
+    <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
+    <button type="submit" class="btn primary">Enviar</button>
+  </form>
+  <p id="formStatus" class="status"></p>
+</section>
+
+
+    <!-- Footer -->
+   <footer class="footer section">
+  <small>© 2025 Mario — Portafolio personal</small>
+  <div class="socials">
+    <a href="https://github.com" target="_blank">GitHub</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+    <a href="mailto:tuemail@gmail.com">Email</a>
+  </div>
+</footer>
+
+
+    <!-- Menú lateral con dots -->
+    <nav id="sideNav">
+      <ul>
+        <li><a href="#hero" class="dot active" data-section="hero"></a></li>
+        <li><a href="#proyectos" class="dot" data-section="proyectos"></a></li>
+        <li><a href="#sobre" class="dot" data-section="sobre"></a></li>
+        <li><a href="#stats" class="dot" data-section="stats"></a></li>
+        <li><a href="#contacto" class="dot" data-section="contacto"></a></li>
+      </ul>
+    </nav>
+
+    <!-- Modal de proyecto -->
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <div id="modalTech"></div>
+        <img id="modalImg" src="" alt="Imagen del proyecto" />
+        <div class="modal-nav">
+          <button id="prevProject">⟨ Anterior</button>
+          <button id="nextProject">Siguiente ⟩</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón volver arriba -->
+    <button id="backToTop">↑</button>
+
+    <!-- Librerías -->
+    <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins&display=swap" rel="stylesheet">
+<script>
+  window.onload = function() {
+    // 🔥 Al cargar la página, fuerza scroll al inicio
+    window.scrollTo(0, 0);
+  };
+</script>

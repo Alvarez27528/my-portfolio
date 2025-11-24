@@ -1,0 +1,28 @@
+[
+  {
+    "titulo": "Ia para organizar colegio",
+    "descripcion": "App sencilla para gestionar los examenes con ia.",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "imagen": "img/Colegio-ia.jpg"
+  },
+  {
+    "titulo": "Portafolio inicial",
+    "descripcion": "Primera versión de mi web personal.",
+    "tecnologias": ["HTML", "CSS"],
+    "imagen": "img/Portafolios-mario.jpg"
+  },
+  {
+    "titulo": "Sensor huella",
+    "descripcion": "Sensor de huella para control de acceso de mi habitación.",
+    "tecnologias": ["Arduino"],
+    "imagen": "img/Sensor-huella.png"
+  }
+]
+
+
+
+
+
+
+
+
