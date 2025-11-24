@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://Alvarez27528.github.io/my-portfolio/sitemap.xml
