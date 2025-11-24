@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://Alvarez27528/my-portfolio/</loc></url>
-  <url><loc>https://Alvarez27528/my-portfolio/proyectos</loc></url>
-  <url><loc>https://Alvarez27528/my-portfolio/contacto</loc></url>
+  <url>
+    <loc>https://Alvarez27528.github.io/my-portfolio/</loc>
+  </url>
 </urlset>
